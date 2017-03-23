@@ -1,6 +1,9 @@
 <template>
 	<div class="v-home">
-		222w2
+		003111222e00 {{msg}}
+		<div class="box">
+			ziyemidddwwwan
+		</div>
 	</div>
 </template>
 
@@ -9,14 +12,15 @@
 		name: 'Vhome',
 		data () {
 			return {
+				msg: 'hello'
 			}
 		}
 	}
 </script>
 
 <style>
-	.v-home {
-		font-size: 30px;
+	div {
+		font-size: 20px;
 		color: red;
 	}
 
