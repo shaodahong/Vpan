@@ -4695,14 +4695,23 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 35 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
 //
 //
 //
+
+/* harmony default export */ __webpack_exports__["default"] = {
+	name: 'Vhome',
+	data() {
+		return {};
+	}
+};
 
 /***/ }),
 /* 36 */,
@@ -4729,7 +4738,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__dirname) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(17);
@@ -4750,10 +4759,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$http = __WEBPACK_IMPORTED
 
 
 
+console.log('vHome', __WEBPACK_IMPORTED_MODULE_4__components_v_home_vue___default.a);
+
 const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
-	mode: 'history',
-	base: __dirname,
-	routers: [{
+	routes: [{
 		//主页
 		name: 'home',
 		path: '/',
@@ -4764,7 +4773,6 @@ const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
 const app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	router
 }).$mount('#app');
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "/"))
 
 /***/ })
 ],[42]);

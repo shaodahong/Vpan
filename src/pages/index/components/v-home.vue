@@ -5,7 +5,13 @@
 </template>
 
 <script>
-
+	export default {
+		name: 'Vhome',
+		data () {
+			return {
+			}
+		}
+	}
 </script>
 
 <style>
