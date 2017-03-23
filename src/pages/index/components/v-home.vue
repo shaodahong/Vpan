@@ -1,6 +1,6 @@
 <template>
 	<div class="v-home">
-		home
+		222w2
 	</div>
 </template>
 
@@ -15,6 +15,9 @@
 </script>
 
 <style>
-
+	.v-home {
+		font-size: 30px;
+		color: red;
+	}
 
 </style>
