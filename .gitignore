@@ -94,4 +94,4 @@ fabric.properties
 webpack.build.js
 webpack.config.js
 webpack.dev.js
-/node_modules
+./node_modules/
