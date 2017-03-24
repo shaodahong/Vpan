@@ -4,20 +4,19 @@
 #### 项目目录结构
 ```
     ├─dist (生产目录)
-    │	└─static
-    │	│	└─css
-    │	│	└─images
-    │	│	├─index.hash.js
-    │	│	├─page1.hash.js
-    │	│	├─page2.hash.js
-    │	│	├─...
-	│	│
-	│	│
-	│	├─index.html
-	│	├─page1.html
-	│	├─page2.html
-	│	├─...
-    │
+    |	└─static
+    |	|  └─css
+    |	|  └─images
+    |	|  ├─index.hash.js
+    |	|  ├─page1.hash.js
+    |	|  ├─page2.hash.js
+    |	|  ├─...
+	|	|
+	|	├─index.html
+	|	├─page1.html
+	|	├─page2.html
+	|	├─...
+    |
     └─src (开发目录)
         ├─assets (公用资源)
         │  └─css
