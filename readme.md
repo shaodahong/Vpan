@@ -2,9 +2,9 @@
 ## vue 一个云盘项目，采用wwebpack构建
 ### webpack
 多页面配置
-```javsscript
+```javascript
 - dist 	//发布目录
-	- static	静态资源
+	- static	//静态资源
 	index.html
 	XXX.html
 	XXX.html
