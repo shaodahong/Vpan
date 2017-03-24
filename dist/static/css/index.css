@@ -1,0 +1,75 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, img, button {
+  margin: 0;
+  padding: 0;
+  user-select: none; }
+
+input, textarea, button {
+  outline: none !important; }
+
+input::-ms-clear {
+  display: none; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:link {
+    text-decoration: none; }
+
+i {
+  font-style: normal; }
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer; }
+  button[disabled] {
+    opacity: .3;
+    cursor: default !important; }
+
+div[tabindex], table[tabindex] {
+  outline: none !important; }
+
+em {
+  font-style: normal; }
+
+div, span, p, h1, h2, h3, h4, h5, h6 {
+  cursor: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+.clearfix::after::before {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: none;
+  clear: both;
+}
+.col-1, .col-2, .col-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.col-1 {
+  left: 0;
+  width: 100px;
+  background-color: #f3f3f3;
+}
+.col-2 {
+  left: 100px;
+  width: 220px;
+  background-color: green;
+}
+.col-3 {
+  left: 320px;
+  right: 0;
+  background-color: yellow;
+}
