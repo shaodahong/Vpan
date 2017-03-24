@@ -11,11 +11,11 @@
     |	|  ├─page1.hash.js
     |	|  ├─page2.hash.js
     |	|  ├─...
-	|	|
-	|	├─index.html
-	|	├─page1.html
-	|	├─page2.html
-	|	├─...
+    |   |
+    |   ├─index.html
+    |   ├─page1.html
+    |   ├─page2.html
+    |   ├─...
     |
     └─src (开发目录)
         ├─assets (公用资源)
