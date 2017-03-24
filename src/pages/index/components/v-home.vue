@@ -1,9 +1,8 @@
 <template>
 	<div class="v-home">
-		003111222e00 {{msg}}
-		<div class="box">
-			ziyemidddwwwan
-		</div>
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+		<div class="col-3"></div>
 	</div>
 </template>
 
@@ -18,10 +17,6 @@
 	}
 </script>
 
-<style>
-	div {
-		font-size: 20px;
-		color: red;
-	}
-
+<style lang="scss">
+	@import '../index.scss';
 </style>

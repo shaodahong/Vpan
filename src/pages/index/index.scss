@@ -1,0 +1,21 @@
+@import '../../assets/css/common.scss';
+.col-1,.col-2,.col-3 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.col-1 {
+	left: 0;
+	width: 100px;
+	background-color: $mainBackgroundColor;
+}
+.col-2 {
+	left: 100px;
+	width: 220px;
+	background-color: green;
+}
+.col-3 {
+	left: 320px;
+    right: 0;
+    background-color: yellow;
+}

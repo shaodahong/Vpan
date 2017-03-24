@@ -1,6 +1,64 @@
-body {
-	background-color: red;
-	div {
-		font-size: 20px;
-	}
+html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, img, button {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+input, textarea, button {
+    outline: none !important;
+}
+
+//IE10以上input去掉X
+input::-ms-clear {
+    display: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:link
+    {
+        text-decoration: none;
+    }
+}
+
+i {
+    font-style: normal;
+}
+
+button{
+    border:0;
+    background: none;
+    cursor: pointer;
+    &[disabled]{
+      opacity: .3;
+      cursor: default !important;
+    }
+}
+
+div,table{
+    &[tabindex]{
+    outline: none !important;
+    }
+}
+
+em{
+    font-style: normal;
+}
+
+div,span,p,h1,h2,h3, h4, h5, h6{
+    cursor:inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }

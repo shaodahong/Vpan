@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Axios from 'axios';
+import '../../assets/css/reset.scss';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
