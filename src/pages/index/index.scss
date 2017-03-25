@@ -1,22 +1,52 @@
 @import '../../assets/css/common.scss';
-.col-1,.col-2,.col-3 {
-	position: absolute;
-	top: 0;
-	bottom: 0;
+.v-home {
+	.col-1,.col-2,.col-3 {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+	.col-1 {
+		left: 0;
+		width: 100px;
+		@include _mainBackgroundColor;
+		padding-top: 80px;
+		.v-home-user {
+			border-radius: 50%;
+			width: 53px;
+			height: 53px;
+			display: block;
+			margin-left: 23px;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		.v-home-menus {
+			margin-top: 50px;
+			.v-home-menu {
+				height: 50px;
+				color: $mainHoverBackgroundColor;
+				text-align: center;
+				font-size: 16px;
+				line-height: 50px;
+				cursor: pointer;
+				&.active {
+					background-color: $mainHoverBackgroundColor;
+					color: #666;
+				}
+			}
+		}
+	}
+	.col-2 {
+		left: 100px;
+		width: 220px;
+		background-color: $mainBackgroundColor;
+		border-right: 1px solid #f2f2f2;
+	}
+	.col-3 {
+		left: 320px;
+		right: 0;
+		background-color: $mainBackgroundColor;
+	}
 }
-.col-1 {
-	left: 0;
-	width: 100px;
-	@include _mainBackgroundColor;
-}
-.col-2 {
-	left: 100px;
-	width: 220px;
-	background-color: $mainBackgroundColor;
-	border-right: 1px solid #f2f2f2;
-}
-.col-3 {
-	left: 320px;
-    right: 0;
-    background-color: $mainBackgroundColor;
-}
+

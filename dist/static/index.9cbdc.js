@@ -742,13 +742,13 @@ module.exports = function bind(fn, thisArg) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_router__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_router__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_css_reset_scss__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_css_reset_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__assets_css_reset_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_v_home_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_v_home_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_v_home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_v_home_vue__);
 
 
@@ -1638,6 +1638,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
 	name: 'Vhome',
@@ -1669,6 +1675,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "static/images/user.7a595.jpeg";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
 
 /* styles */
 __webpack_require__(43)
@@ -1677,7 +1689,7 @@ var Component = __webpack_require__(6)(
   /* script */
   __webpack_require__(39),
   /* template */
-  __webpack_require__(54),
+  __webpack_require__(55),
   /* scopeId */
   null,
   /* cssModules */
@@ -1688,9 +1700,9 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 53 */,
-/* 54 */
-/***/ (function(module, exports) {
+/* 54 */,
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
@@ -1699,7 +1711,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "v-home"
   }, [_c('div', {
     staticClass: "col-1"
-  }), _vm._v(" "), _c('div', {
+  }, [_c('img', {
+    staticClass: "v-home-user",
+    attrs: {
+      "src": __webpack_require__(52)
+    }
+  }), _vm._v(" "), _c('ul', {
+    staticClass: "v-home-menus"
+  }, [_c('li', {
+    staticClass: "v-home-menu active"
+  }, [_vm._v("文件")]), _vm._v(" "), _c('li', {
+    staticClass: "v-home-menu"
+  }, [_vm._v("消息")])])]), _vm._v(" "), _c('div', {
     staticClass: "col-2"
   }), _vm._v(" "), _c('div', {
     staticClass: "col-3"
@@ -1707,8 +1730,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 55 */,
-/* 56 */
+/* 56 */,
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3993,7 +4016,7 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4808,11 +4831,11 @@ var index_esm = {
 
 
 /***/ }),
-/* 58 */,
 /* 59 */,
 /* 60 */,
 /* 61 */,
-/* 62 */
+/* 62 */,
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
@@ -4820,4 +4843,4 @@ module.exports = __webpack_require__(13);
 
 
 /***/ })
-],[62]);
+],[63]);
