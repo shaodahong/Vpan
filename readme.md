@@ -1,6 +1,6 @@
-# Vpan
+## Vpan
+> vue 一个云盘项目，采用webpack构建
 ![Vpan](design/home.png)
-## vue 一个云盘项目，采用wwebpack构建
 ### webpack-多页面配置
 #### 项目目录结构
 ```
