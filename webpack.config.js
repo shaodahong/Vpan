@@ -7,15 +7,13 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var isPro = process.env.NODE_ENV === 'production' ? true : false;
 
-var publicPath = 'http://localhost:8000/';
-
-isPro = false;
+// var publicPath = 'http://localhost:8000/';
 
 var webpackConfig = {
     entry: {},
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: publicPath,
+        publicPath: '',
         filename: isPro ? 'static/[name].[hash:5].js' : 'static/[name].js',
     },
     resolve: {
@@ -33,14 +31,16 @@ var webpackConfig = {
                     css: ExtractTextPlugin.extract({
                         fallback: 'style-loader',
                         use: [
-                            'css-loader'
+                            'css-loader',
+                            'postcss-loader'
                         ]
                     }),
                     scss: ExtractTextPlugin.extract({
                         fallback: 'style-loader',
                         use: [
                             'css-loader',
-                            'sass-loader'
+                            'sass-loader',
+                            'postcss-loader'
                         ]
                     }),
                 }
@@ -55,7 +55,8 @@ var webpackConfig = {
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
                 use: [
-                    'css-loader'
+                    'css-loader',
+                    'postcss-loader'
                 ]
             }),
             exclude: './node_modules/',
@@ -66,7 +67,8 @@ var webpackConfig = {
                 fallback: 'style-loader',
                 use: [
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
+                    'postcss-loader'
                 ]
             }),
             exclude: './node_modules/',
@@ -107,6 +109,13 @@ var webpackConfig = {
         }]
     },
     plugins: [
+        new Webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: function () {
+                    return [require('autoprefixer')({ browsers: ['> 1%','last 2 versions'] })];
+                }
+            }
+        }),
         new Webpack.HotModuleReplacementPlugin(),
         new Webpack.NoEmitOnErrorsPlugin(),
         new Webpack.ProvidePlugin({}),

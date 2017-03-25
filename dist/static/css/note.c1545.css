@@ -1,6 +1,9 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, img, button {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; }
 
 input, textarea, button {
@@ -44,6 +47,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
+
+div {
+  box-sizing: border-box; }
 p {
   width: 20px;
   height: 20px;

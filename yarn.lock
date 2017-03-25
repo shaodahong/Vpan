@@ -201,7 +201,7 @@ autoprefixer-loader@^3.2.0:
     postcss "^5.0.4"
     postcss-safe-parser "^1.0.1"
 
-autoprefixer@^6.0.2, autoprefixer@^6.3.1:
+autoprefixer@^6.0.2, autoprefixer@^6.3.1, autoprefixer@^6.7.7:
   version "6.7.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.7.tgz#1dbd1c835658e35ce3f9984099db00585c782014"
   dependencies:

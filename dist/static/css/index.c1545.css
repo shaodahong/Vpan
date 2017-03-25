@@ -1,6 +1,9 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a, img, button {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; }
 
 input, textarea, button {
@@ -45,6 +48,9 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
+div {
+  box-sizing: border-box; }
+
 .clearfix::after::before {
   content: '';
   height: 0;
@@ -61,15 +67,16 @@ html {
 .col-1 {
   left: 0;
   width: 100px;
-  background-color: #f3f3f3;
+  background: linear-gradient(to bottom, #86B2B3, #86B2B3);
 }
 .col-2 {
   left: 100px;
   width: 220px;
-  background-color: green;
+  background-color: #f9f6f2;
+  border-right: 1px solid #f2f2f2;
 }
 .col-3 {
   left: 320px;
   right: 0;
-  background-color: yellow;
+  background-color: #f9f6f2;
 }

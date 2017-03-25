@@ -7,15 +7,16 @@
 .col-1 {
 	left: 0;
 	width: 100px;
-	background-color: $mainBackgroundColor;
+	@include _mainBackgroundColor;
 }
 .col-2 {
 	left: 100px;
 	width: 220px;
-	background-color: green;
+	background-color: $mainBackgroundColor;
+	border-right: 1px solid #f2f2f2;
 }
 .col-3 {
 	left: 320px;
     right: 0;
-    background-color: yellow;
+    background-color: $mainBackgroundColor;
 }
