@@ -1,5 +1,5 @@
 # Vpan
-![Vpan]('./design/home.png')
+![Vpan](design/home.png)
 ## vue 一个云盘项目，采用wwebpack构建
 ### webpack-多页面配置
 #### 项目目录结构
