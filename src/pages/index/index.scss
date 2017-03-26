@@ -30,9 +30,15 @@
 				font-size: 16px;
 				line-height: 50px;
 				cursor: pointer;
+				position: relative;
 				&.active {
 					background-color: $mainHoverBackgroundColor;
 					color: #666;
+				}
+				.v-home-menu-icon {
+					position: absolute;
+					top: 0;
+					left: 0;
 				}
 			}
 		}

@@ -2423,10 +2423,16 @@ body {
       font-size: 16px;
       line-height: 50px;
       cursor: pointer;
+      position: relative;
 }
 .v-home .col-1 .v-home-menus .v-home-menu.active {
         background-color: #F9F6F2;
         color: #666;
+}
+.v-home .col-1 .v-home-menus .v-home-menu .v-home-menu-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
 }
 .v-home .col-2 {
   left: 100px;

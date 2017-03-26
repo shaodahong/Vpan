@@ -1737,7 +1737,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('li', {
     staticClass: "v-home-menu active"
   }, [_c('i', {
-    staticClass: "fa fa-file",
+    staticClass: "fa fa-file v-home-menu-icon",
     attrs: {
       "aria-hidden": "true"
     }
@@ -1748,7 +1748,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("文件")])]), _vm._v(" "), _c('li', {
     staticClass: "v-home-menu"
   }, [_c('i', {
-    staticClass: "fa fa-file",
+    staticClass: "fa fa-file v-home-menu-icon",
     attrs: {
       "aria-hidden": "true"
     }
