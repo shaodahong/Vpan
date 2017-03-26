@@ -1648,6 +1648,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
 	name: 'Vhome',
@@ -1730,9 +1736,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "v-home-menus"
   }, [_c('li', {
     staticClass: "v-home-menu active"
-  }, [_vm._v("文件")]), _vm._v(" "), _c('li', {
+  }, [_c('i', {
+    staticClass: "fa fa-file",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_vm._v("文件")])]), _vm._v(" "), _c('li', {
     staticClass: "v-home-menu"
-  }, [_vm._v("消息")])])]), _vm._v(" "), _c('div', {
+  }, [_c('i', {
+    staticClass: "fa fa-file",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_vm._v("消息")])])])]), _vm._v(" "), _c('div', {
     staticClass: "col-2"
   }), _vm._v(" "), _c('div', {
     staticClass: "col-3"

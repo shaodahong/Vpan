@@ -104,10 +104,10 @@ var webpackConfig = {
         }, {
             test: /\.(woff2?|eot|ttf|otf)\??.*$/,
             loader: "url-loader",
-            options: {
-                limit: 10000,
-                name: 'static/fonts/[name].[hash:5].[ext]'
-            }
+            // options: {
+            //     limit: 10000,
+            //     name: isPro ? 'static/fonts/[name].[hash:5].[ext]' : 'static/fonts/[name].[ext]'
+            // }
         }, {
             test: /\.html$/,
             loader: 'html-loader',
