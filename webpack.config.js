@@ -50,7 +50,7 @@ var webpackConfig = {
             loader: 'babel-loader',
             exclude: './node_modules/',
             include: path.resolve(__dirname, './src')
-        },  {
+        }, {
             test: /\.css/,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
@@ -62,7 +62,7 @@ var webpackConfig = {
             exclude: './node_modules/',
             include: path.resolve(__dirname, './src')
         }, {
-            test: /\.scss/,
+            test: /\.(sass|scss)$/,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
                 use: [
@@ -73,7 +73,7 @@ var webpackConfig = {
             }),
             exclude: './node_modules/',
             include: path.resolve(__dirname, './src')
-        },{
+        }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
             exclude: './node_modules/',
             include: path.resolve(__dirname, './src'),
@@ -102,6 +102,13 @@ var webpackConfig = {
                 },
             }],
         }, {
+            test: /\.(woff2?|eot|ttf|otf)\??.*$/,
+            loader: "url-loader",
+            options: {
+                limit: 10000,
+                name: 'static/fonts/[name].[hash:5].[ext]'
+            }
+        }, {
             test: /\.html$/,
             loader: 'html-loader',
             exclude: './node_modules/',
@@ -112,7 +119,7 @@ var webpackConfig = {
         new Webpack.LoaderOptionsPlugin({
             options: {
                 postcss: function () {
-                    return [require('autoprefixer')({ browsers: ['> 1%','last 2 versions'] })];
+                    return [require('autoprefixer')({browsers: ['> 1%', 'last 2 versions']})];
                 }
             }
         }),
@@ -139,7 +146,7 @@ function getEntries(globPath) {
     var files = glob.sync(globPath),
         entries = {};
 
-    files.forEach(function(filepath) {
+    files.forEach(function (filepath) {
         var split = filepath.split('/');
         var name = split[split.length - 2];
 
@@ -152,7 +159,7 @@ function getEntries(globPath) {
 var entries = getEntries('./src/pages/**/*.js');
 var hot = 'webpack-hot-middleware/client?reload=true';
 
-Object.keys(entries).forEach(function(name) {
+Object.keys(entries).forEach(function (name) {
     webpackConfig.entry[name] = [hot, entries[name]];
     var plugin = new HtmlWebpackPlugin({
         filename: name + '.html',

@@ -2,7 +2,9 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Axios from 'axios';
+
 import '../../assets/css/reset.scss';
+// import '~font-awesome';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
