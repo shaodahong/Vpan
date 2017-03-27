@@ -12,13 +12,22 @@ Vue.use(Vuex);
 Vue.prototype.$http = Axios;
 
 import vHome from './components/v-home.vue';
+import vFile from './components/v-file.vue';
+import vChat from './components/v-chat.vue';
 
 const router = new VueRouter({
 	routes: [{
 		//主页
 		name: 'home',
 		path: '/',
-		component: vHome
+		component: vHome,
+		children: [{
+			path: 'file',
+			component: vFile
+		},{
+            path: 'chat',
+            component: vChat
+		}]
 	}]
 });
 

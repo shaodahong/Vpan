@@ -23,22 +23,36 @@
 		}
 		.v-home-menus {
 			margin-top: 50px;
-			.v-home-menu {
-				height: 50px;
-				color: $mainHoverBackgroundColor;
+			li {
+				height: 70px;
+				width: 100px;
 				text-align: center;
-				font-size: 16px;
-				line-height: 50px;
-				cursor: pointer;
-				position: relative;
-				&.active {
-					background-color: $mainHoverBackgroundColor;
-					color: #666;
-				}
-				.v-home-menu-icon {
-					position: absolute;
-					top: 0;
-					left: 0;
+				.v-home-menu {
+					width: 100px;
+					height: 24px;
+					line-height: 24px;
+					display: block;
+					padding-top: 40px;
+					position: relative;
+					color: $mainBackgroundColor;
+					.v-home-menu-icon {
+						position: absolute;
+						top: 8px;
+						left: 38px;
+						font-size: 24px;
+					}
+					.v-home-menu-text {
+						font-size: 16px;
+					}
+					&.router-link-active {
+						background: $mainBackgroundColor;
+						.v-home-menu-icon {
+							color: #666;
+						}
+						.v-home-menu-text {
+							color: #666;
+						}
+					}
 				}
 			}
 		}

@@ -2416,23 +2416,37 @@ body {
 .v-home .col-1 .v-home-menus {
     margin-top: 50px;
 }
-.v-home .col-1 .v-home-menus .v-home-menu {
-      height: 50px;
-      color: #F9F6F2;
+.v-home .col-1 .v-home-menus li {
+      height: 70px;
+      width: 100px;
       text-align: center;
-      font-size: 16px;
-      line-height: 50px;
-      cursor: pointer;
-      position: relative;
 }
-.v-home .col-1 .v-home-menus .v-home-menu.active {
-        background-color: #F9F6F2;
-        color: #666;
+.v-home .col-1 .v-home-menus li .v-home-menu {
+        width: 100px;
+        height: 24px;
+        line-height: 24px;
+        display: block;
+        padding-top: 40px;
+        position: relative;
+        color: #f9f6f2;
 }
-.v-home .col-1 .v-home-menus .v-home-menu .v-home-menu-icon {
-        position: absolute;
-        top: 0;
-        left: 0;
+.v-home .col-1 .v-home-menus li .v-home-menu .v-home-menu-icon {
+          position: absolute;
+          top: 8px;
+          left: 38px;
+          font-size: 24px;
+}
+.v-home .col-1 .v-home-menus li .v-home-menu .v-home-menu-text {
+          font-size: 16px;
+}
+.v-home .col-1 .v-home-menus li .v-home-menu.router-link-active {
+          background: #f9f6f2;
+}
+.v-home .col-1 .v-home-menus li .v-home-menu.router-link-active .v-home-menu-icon {
+            color: #666;
+}
+.v-home .col-1 .v-home-menus li .v-home-menu.router-link-active .v-home-menu-text {
+            color: #666;
 }
 .v-home .col-2 {
   left: 100px;
@@ -2445,3 +2459,31 @@ body {
   right: 0;
   background-color: #f9f6f2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
