@@ -780,12 +780,16 @@ const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
 		path: '/',
 		component: __WEBPACK_IMPORTED_MODULE_6__components_v_home_vue___default.a,
 		children: [{
+			name: 'file',
 			path: 'file',
 			component: __WEBPACK_IMPORTED_MODULE_7__components_v_file_vue___default.a
 		}, {
+			name: 'chat',
 			path: 'chat',
 			component: __WEBPACK_IMPORTED_MODULE_8__components_v_chat_vue___default.a
 		}]
+	}, {
+		path: '*', redirect: { name: 'file' }
 	}]
 });
 

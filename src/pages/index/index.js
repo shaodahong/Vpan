@@ -22,12 +22,16 @@ const router = new VueRouter({
 		path: '/',
 		component: vHome,
 		children: [{
+			name: 'file',
 			path: 'file',
 			component: vFile
 		},{
+			name: 'chat',
             path: 'chat',
             component: vChat
 		}]
+	},{
+		path: '*', redirect: { name: 'file' }
 	}]
 });
 
