@@ -2,6 +2,7 @@
 // 依赖项
 const express = require('express');
 const path = require('path');
+var opn = require('opn');
 const webpack = require('webpack');
 const history = require('connect-history-api-fallback');
 const webpackMiddleware = require('webpack-dev-middleware');
@@ -42,5 +43,7 @@ app.listen(port, function onStart(err) {
     if (err) {
         console.log(err);
     }
+    var uri='http://localhost:'+port;
+    opn(uri);
 }
 )
