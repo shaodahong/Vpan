@@ -18,8 +18,6 @@
             </ul>
         </div>
         <router-view></router-view>
-        <div class="col-2"></div>
-        <div class="col-3"></div>
     </div>
 </template>
 
@@ -35,5 +33,5 @@
 </script>
 
 <style lang="scss">
-    @import '../index.scss';
+    @import '../style/v-home';
 </style>

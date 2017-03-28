@@ -1,15 +1,20 @@
 <template>
-    <div>
-        file
+    <div class="v-file">
+        <v-category></v-category>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import vCategory from './v-category.vue';
     export default {
-        name: 'vFile'
+        name: 'vFile',
+        components: {
+            vCategory
+        }
     }
 </script>
 
-<style>
-
+<style lang="scss">
+    @import '../style/v-file';
 </style>

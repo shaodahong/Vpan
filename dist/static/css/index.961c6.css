@@ -2391,12 +2391,10 @@ body {
   display: none;
   clear: both;
 }
-.v-home .col-1, .v-home .col-2, .v-home .col-3 {
+.v-home .col-1 {
   position: absolute;
   top: 0;
   bottom: 0;
-}
-.v-home .col-1 {
   left: 0;
   width: 100px;
   background: linear-gradient(to bottom, #86B2B3, #86B2B3);
@@ -2446,18 +2444,52 @@ body {
             color: #666;
 }
 .v-home .col-1 .v-home-menus li .v-home-menu.router-link-active .v-home-menu-text {
-            color: #666;
+            color: #444;
 }
-.v-home .col-2 {
+
+.clearfix::after::before {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: none;
+  clear: both;
+}
+.v-file {
+  position: absolute;
+  top: 0;
   left: 100px;
+  right: 0;
+  bottom: 0;
+  background-color: #f9f6f2;
+}
+
+.clearfix::after::before {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: none;
+  clear: both;
+}
+.v-category {
+  position: absolute;
   width: 220px;
+  left: 0;
+  top: 0;
+  bottom: 0;
   background-color: #f9f6f2;
   border-right: 1px solid #f2f2f2;
 }
-.v-home .col-3 {
-  left: 320px;
-  right: 0;
-  background-color: #f9f6f2;
+.v-category .v-category-lists .v-category-list {
+    height: 35px;
+    line-height: 35px;
+}
+.v-category .v-category-lists .v-category-list:nth-child(even) {
+      background-color: #e4e4e4;
+}
+.v-category .v-category-lists .v-category-list .v-category-name {
+      color: #444;
 }
 
 
@@ -2474,16 +2506,19 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.clearfix::after::before {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: none;
+  clear: both;
+}
+.v-list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 220px;
+  right: 0;
+  background-color: #f9f6f2;
+}

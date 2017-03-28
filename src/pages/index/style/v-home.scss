@@ -1,11 +1,9 @@
-@import '../../assets/css/common.scss';
+@import '../../../assets/css/common';
 .v-home {
-	.col-1,.col-2,.col-3 {
+	.col-1 {
 		position: absolute;
 		top: 0;
 		bottom: 0;
-	}
-	.col-1 {
 		left: 0;
 		width: 100px;
 		@include _mainBackgroundColor;
@@ -50,23 +48,12 @@
 							color: #666;
 						}
 						.v-home-menu-text {
-							color: #666;
+							color: #444;
 						}
 					}
 				}
 			}
 		}
-	}
-	.col-2 {
-		left: 100px;
-		width: 220px;
-		background-color: $mainBackgroundColor;
-		border-right: 1px solid #f2f2f2;
-	}
-	.col-3 {
-		left: 320px;
-		right: 0;
-		background-color: $mainBackgroundColor;
 	}
 }
 

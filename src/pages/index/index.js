@@ -14,6 +14,7 @@ Vue.prototype.$http = Axios;
 import vHome from './components/v-home.vue';
 import vFile from './components/v-file.vue';
 import vChat from './components/v-chat.vue';
+import vList from './components/v-list.vue';
 
 const router = new VueRouter({
 	routes: [{
@@ -24,7 +25,12 @@ const router = new VueRouter({
 		children: [{
 			name: 'file',
 			path: 'file',
-			component: vFile
+			component: vFile,
+			children:[{
+                name: 'list',
+                path: 'list',
+                component: vList,
+			}]
 		},{
 			name: 'chat',
             path: 'chat',
