@@ -132,7 +132,7 @@ var webpackConfig = {
         new ExtractTextPlugin({
             filename: isPro ? 'static/css/[name].[hash:5].css' : 'static/css/[name].css',
             allChunks: true,
-            disable: false
+            disable: isPro ? false : true
         }),
     ],
     devServer: {
