@@ -41,3 +41,11 @@
     |
     └─design (设计资源)
 ```
+### 如何使用？
+1. `git clone https://github.com/Redshao/Vpan.git`
+2. `cd Vpan`
+3. 'yarn'或者`yarn install`
+4. 'npm run dev'之后等待控制台提示success字样
+5. 浏览器打开localhost:8000
+
+Tips: 中间步骤可能会出现莫名其妙的问题，别慌，先度娘、后谷爹，再issue
