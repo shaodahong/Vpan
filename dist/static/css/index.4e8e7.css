@@ -2484,9 +2484,18 @@ body {
 .v-category .v-category-lists .v-category-list {
     height: 35px;
     line-height: 35px;
+    font-size: 14px;
+    padding-left: 50px;
+    position: relative;
 }
 .v-category .v-category-lists .v-category-list:nth-child(even) {
       background-color: #e4e4e4;
+}
+.v-category .v-category-lists .v-category-list .v-category-icon {
+      font-size: 20px;
+      position: absolute;
+      top: 8px;
+      left: 15px;
 }
 .v-category .v-category-lists .v-category-list .v-category-name {
       color: #444;

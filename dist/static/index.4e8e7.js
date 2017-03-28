@@ -2023,7 +2023,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, _vm._l((_vm.categorys), function(category) {
     return _c('li', {
       staticClass: "v-category-list"
-    }, [_c('i'), _vm._v(" "), _c('a', {
+    }, [_c('i', {
+      staticClass: "fa fa-camera v-category-icon"
+    }), _vm._v(" "), _c('a', {
       staticClass: "v-category-name",
       attrs: {
         "href": "javascript:;"
