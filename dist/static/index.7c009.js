@@ -1693,6 +1693,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 name: '分类3'
             }]
         };
+    },
+    methods: {
+        goToFile: function () {}
     }
 };
 
@@ -2022,7 +2025,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "v-category-lists"
   }, _vm._l((_vm.categorys), function(category) {
     return _c('li', {
-      staticClass: "v-category-list"
+      staticClass: "v-category-list",
+      on: {
+        "click": function($event) {
+          _vm.goToFile()
+        }
+      }
     }, [_c('i', {
       staticClass: "fa fa-camera v-category-icon"
     }), _vm._v(" "), _c('a', {

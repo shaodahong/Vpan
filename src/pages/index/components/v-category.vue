@@ -1,7 +1,7 @@
 <template>
     <div class="v-category">
         <ul class="v-category-lists">
-            <li v-for="category in categorys" class="v-category-list">
+            <li v-for="category in categorys" class="v-category-list" @click="goToFile()">
                 <i class="fa fa-camera v-category-icon"></i>
                 <a href="javascript:;" v-text="category.name" class="v-category-name"></a>
             </li>
@@ -31,6 +31,11 @@
                 },{
                     name: '分类3'
                 }]
+            }
+        },
+        methods: {
+            goToFile: function () {
+                
             }
         }
     }
