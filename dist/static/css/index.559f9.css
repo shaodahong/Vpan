@@ -52,7 +52,8 @@ div {
   box-sizing: border-box; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden; }
 @charset "UTF-8";
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2480,6 +2481,7 @@ body {
   bottom: 0;
   background-color: #f9f6f2;
   border-right: 1px solid #f2f2f2;
+  overflow-y: auto;
 }
 .v-category .v-category-lists .v-category-list {
     height: 35px;
@@ -2487,6 +2489,7 @@ body {
     font-size: 14px;
     padding-left: 50px;
     position: relative;
+    cursor: pointer;
 }
 .v-category .v-category-lists .v-category-list:nth-child(even) {
       background-color: #e4e4e4;
@@ -2496,6 +2499,7 @@ body {
       position: absolute;
       top: 8px;
       left: 15px;
+      color: #777;
 }
 .v-category .v-category-lists .v-category-list .v-category-name {
       color: #444;

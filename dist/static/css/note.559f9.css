@@ -52,7 +52,8 @@ div {
   box-sizing: border-box; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden; }
 p {
   width: 20px;
   height: 20px;
