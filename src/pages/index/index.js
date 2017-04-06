@@ -28,7 +28,7 @@ const router = new VueRouter({
 			component: vFile,
 			children:[{
                 name: 'list',
-                path: 'list',
+                path: 'list/:id',
                 component: vList,
 			}]
 		},{

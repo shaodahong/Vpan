@@ -1,12 +1,26 @@
 <template>
     <div class="v-list">
-        list
+        {{info}}
     </div>
 </template>
 
 <script>
     export default {
-        name: 'vList'
+        name: 'vList',
+        data() {
+            return {
+                info: undefined,
+            }
+        },
+        created: function () {
+            this.getInfo()
+        },
+        methods: {
+            getInfo:function () {
+                this.info = this.$route.params.id;
+                console.log('1', this.$route.params);
+            }
+        }
     }
 </script>
 

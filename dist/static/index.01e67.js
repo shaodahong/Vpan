@@ -788,7 +788,7 @@ const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
 			component: __WEBPACK_IMPORTED_MODULE_7__components_v_file_vue___default.a,
 			children: [{
 				name: 'list',
-				path: 'list',
+				path: 'list/:id',
 				component: __WEBPACK_IMPORTED_MODULE_9__components_v_list_vue___default.a
 			}]
 		}, {
@@ -1676,52 +1676,80 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data() {
         return {
             categorys: [{
+                id: 1000,
                 name: '全部文件'
             }, {
+                id: 1001,
                 name: '应用程序'
             }, {
+                id: 1002,
                 name: '照片'
             }, {
+                id: 1003,
                 name: '文档'
             }, {
+                id: 1004,
                 name: '种子'
             }, {
+                id: 1005,
                 name: '分类1'
             }, {
+                id: 1006,
                 name: '分类2'
             }, {
+                id: 1007,
                 name: '分类3'
             }, {
+                id: 1008,
                 name: '分类4'
             }, {
+                id: 1009,
                 name: '分类5'
             }, {
+                id: 1010,
                 name: '分类6'
             }, {
+                id: 1011,
                 name: '分类7'
             }, {
+                id: 1012,
                 name: '分类8'
             }, {
+                id: 1013,
                 name: '分类9'
             }, {
+                id: 1014,
                 name: '分类10'
             }, {
+                id: 1015,
                 name: '分类11'
             }, {
+                id: 1016,
                 name: '分类7'
             }, {
+                id: 1017,
                 name: '分类8'
             }, {
+                id: 1018,
                 name: '分类9'
             }, {
+                id: 1019,
                 name: '分类10'
             }, {
+                id: 1020,
                 name: '分类11'
             }]
         };
     },
     methods: {
-        goToFile: function () {}
+        goToFile: function (id) {
+            this.$router.push({
+                name: 'list',
+                params: {
+                    id: id
+                }
+            });
+        }
     }
 };
 
@@ -1819,7 +1847,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = {
-    name: 'vList'
+    name: 'vList',
+    data() {
+        return {
+            info: undefined
+        };
+    },
+    created: function () {
+        this.getInfo();
+    },
+    methods: {
+        getInfo: function () {
+            this.info = this.$route.params.id;
+            console.log('1', this.$route.params);
+        }
+    }
 };
 
 /***/ }),
@@ -2054,7 +2096,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "v-category-list",
       on: {
         "click": function($event) {
-          _vm.goToFile()
+          _vm.goToFile(category.id)
         }
       }
     }, [_c('i', {
@@ -2086,7 +2128,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "v-list"
-  }, [_vm._v("\n    list\n")])
+  }, [_vm._v("\n    " + _vm._s(_vm.info) + "\n")])
 },staticRenderFns: []}
 
 /***/ }),
