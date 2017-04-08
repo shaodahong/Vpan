@@ -11,10 +11,10 @@ Vue.use(Vuex);
 
 Vue.prototype.$http = Axios;
 
-import vHome from './components/v-home.vue';
-import vFile from './components/v-file.vue';
-import vChat from './components/v-chat.vue';
-import vList from './components/v-list.vue';
+import vHome from './components/v-home/v-home.vue';
+import vFile from './components/v-file/v-file.vue';
+import vChat from './components/v-chat/v-chat.vue';
+import vList from './components/v-list/v-list.vue';
 
 const router = new VueRouter({
 	routes: [{

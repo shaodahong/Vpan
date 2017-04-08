@@ -15,15 +15,18 @@
         created: function () {
             this.getInfo()
         },
+        beforeRouteUpdate: function (to, from, next) {
+            next();
+            this.getInfo()
+        },
         methods: {
             getInfo:function () {
                 this.info = this.$route.params.id;
-                console.log('1', this.$route.params);
             }
         }
     }
 </script>
 
 <style lang="scss">
-    @import "../style/v-list";
+    @import "v-list";
 </style>

@@ -1,0 +1,57 @@
+@import '../../../../assets/css/common';
+.v-category {
+  position: absolute;
+  width: 220px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $mainBackgroundColor;
+  border-right: 1px solid #f2f2f2;
+  overflow-y: auto;
+  .v-category-lists {
+    .v-category-list {
+      height: 35px;
+      line-height: 35px;
+      font-size: 14px;
+      padding-left: 50px;
+      position: relative;
+      cursor: pointer;
+      &:nth-child(odd) {
+
+      }
+      &:nth-child(even) {
+        background-color: #e4e4e4;
+      }
+      &:hover {
+        background-color: #B0BCB8;
+        .v-category-item {
+          .v-category-name {
+            color: #fff;
+          }
+        }
+      }
+      &.router-link-active {
+        background-color: #B0BCB8;
+        .v-category-item {
+          .v-category-name {
+            color: #fff;
+          }
+        }
+      }
+      .v-category-item {
+        display: block;
+        .v-category-icon {
+          font-size: 20px;
+          position: absolute;
+          top: 8px;
+          left: 15px;
+          color: #777;
+        }
+        .v-category-name {
+          color: #444;
+        }
+      }
+
+    }
+  }
+}

@@ -2494,15 +2494,30 @@ body {
 .v-category .v-category-lists .v-category-list:nth-child(even) {
       background-color: #e4e4e4;
 }
-.v-category .v-category-lists .v-category-list .v-category-icon {
-      font-size: 20px;
-      position: absolute;
-      top: 8px;
-      left: 15px;
-      color: #777;
+.v-category .v-category-lists .v-category-list:hover {
+      background-color: #B0BCB8;
 }
-.v-category .v-category-lists .v-category-list .v-category-name {
-      color: #444;
+.v-category .v-category-lists .v-category-list:hover .v-category-item .v-category-name {
+        color: #fff;
+}
+.v-category .v-category-lists .v-category-list.router-link-active {
+      background-color: #B0BCB8;
+}
+.v-category .v-category-lists .v-category-list.router-link-active .v-category-item .v-category-name {
+        color: #fff;
+}
+.v-category .v-category-lists .v-category-list .v-category-item {
+      display: block;
+}
+.v-category .v-category-lists .v-category-list .v-category-item .v-category-icon {
+        font-size: 20px;
+        position: absolute;
+        top: 8px;
+        left: 15px;
+        color: #777;
+}
+.v-category .v-category-lists .v-category-list .v-category-item .v-category-name {
+        color: #444;
 }
 
 
