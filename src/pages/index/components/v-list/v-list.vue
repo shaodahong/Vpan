@@ -22,6 +22,7 @@
         methods: {
             getInfo:function () {
                 this.info = this.$route.params.id;
+                console.log('store', this.$store.category)
             }
         }
     }

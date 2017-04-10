@@ -21,7 +21,23 @@
         name: 'vCategory',
         data () {
             return {
-                categorys: [{
+                categorys: null
+            }
+        },
+        created: function () {
+            this.getCategorys()
+        },
+        methods: {
+            goToFile: function (id) {
+                this.$router.push({
+                    name: 'list',
+                    params: {
+                        id: id
+                    }
+                })
+            },
+            getCategorys: function () {
+                var data = [{
                     id: 1000,
                     name: '全部文件',
                 }, {
@@ -84,17 +100,9 @@
                 }, {
                     id: 1020,
                     name: '分类11'
-                }]
-            }
-        },
-        methods: {
-            goToFile: function (id) {
-                this.$router.push({
-                    name: 'list',
-                    params: {
-                        id: id
-                    }
-                })
+                }];
+                this.$store.commit('setCategory', data)
+                this.categorys = data;
             }
         }
     }

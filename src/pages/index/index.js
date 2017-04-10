@@ -1,13 +1,12 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Axios from 'axios';
+import store from './store';
 
 import '../../assets/css/reset.scss';
 import '../../lib/font-awesome/scss/font-awesome.scss';
 
 Vue.use(VueRouter);
-Vue.use(Vuex);
 
 Vue.prototype.$http = Axios;
 
@@ -43,6 +42,7 @@ const router = new VueRouter({
 
 
 const app = new Vue({
-	router
+	router,
+    store
 }).$mount('#app');
 
