@@ -9,7 +9,7 @@ import '../../lib/font-awesome/scss/font-awesome.scss';
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
-Vue.prototype.$http = Axios;
+Vue.prototype.$http = Axios;;
 
 import vHome from './components/v-home.vue';
 import vFile from './components/v-file.vue';
