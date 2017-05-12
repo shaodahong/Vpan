@@ -1,20 +1,23 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Axios from 'axios';
+import store from './store';
 
 import '../../assets/css/reset.scss';
 import '../../lib/font-awesome/scss/font-awesome.scss';
 
 Vue.use(VueRouter);
-Vue.use(Vuex);
 
+<<<<<<< HEAD
 Vue.prototype.$http = Axios;;
+=======
+Vue.prototype.$http = Axios
+>>>>>>> master
 
-import vHome from './components/v-home.vue';
-import vFile from './components/v-file.vue';
-import vChat from './components/v-chat.vue';
-import vList from './components/v-list.vue';
+import vHome from './components/v-home/v-home.vue';
+import vFile from './components/v-file/v-file.vue';
+import vChat from './components/v-chat/v-chat.vue';
+import vList from './components/v-list/v-list.vue';
 
 const router = new VueRouter({
 	routes: [{
@@ -28,7 +31,7 @@ const router = new VueRouter({
 			component: vFile,
 			children:[{
                 name: 'list',
-                path: 'list',
+                path: 'list/:id',
                 component: vList,
 			}]
 		},{
@@ -43,6 +46,7 @@ const router = new VueRouter({
 
 
 const app = new Vue({
-	router
+	router,
+    store
 }).$mount('#app');
 

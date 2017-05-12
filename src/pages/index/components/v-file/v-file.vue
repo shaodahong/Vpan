@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import vCategory from './v-category.vue';
+    import vCategory from '../v-category/v-category.vue';
     export default {
         name: 'vFile',
         components: {
@@ -16,5 +16,5 @@
 </script>
 
 <style lang="scss">
-    @import '../style/v-file';
+    @import 'v-file';
 </style>

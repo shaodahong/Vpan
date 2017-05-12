@@ -1,7 +1,7 @@
 <template>
     <div class="v-home">
         <div class="col-1">
-            <img src="../../../assets/images/user.jpeg" class="v-home-user"></img>
+            <img src="../../../../assets/images/user.jpeg" class="v-home-user"></img>
             <ul class="v-home-menus">
                 <li>
                     <router-link to="/file" class="v-home-menu">
@@ -33,5 +33,5 @@
 </script>
 
 <style lang="scss">
-    @import '../style/v-home';
+    @import 'v-home';
 </style>
